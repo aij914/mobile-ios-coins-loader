@@ -10,12 +10,14 @@ import Combine
 
 struct CoinListView: View {
     
-    private let viewModel = CoinListViewModel()
+    @ObservedObject private var viewModel = CoinListViewModel()
     
     var body: some View {
-        Text("Hello, world!").onAppear(perform: {
-            self.viewModel.fetchCoins()
-        })
+        NavigationView {
+            List(viewModel.coinViewModels, id: \.self) { coinViewModel in
+                Text(coinViewModel.displayText)
+            }.navigationTitle("Coins")
+        }
     }
 }
 
@@ -40,6 +42,10 @@ class CoinListViewModel: ObservableObject {
             print(self.coinViewModels)
         })
     }
+    
+    init() {
+        self.fetchCoins()
+    }
 }
 
 struct CoinViewModel: Hashable {
@@ -50,7 +56,18 @@ struct CoinViewModel: Hashable {
     }
     
     var formattedPrice: String {
-        return coin.price
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
+        
+        guard let price = Double(coin.price), let formattedPrice = numberFormatter.string(from: NSNumber(value: price)) else {
+            return ""
+        }
+        
+        return formattedPrice
+    }
+    
+    var displayText: String {
+        return name + " - " + formattedPrice
     }
     
     init(_ coin: Coin) {
