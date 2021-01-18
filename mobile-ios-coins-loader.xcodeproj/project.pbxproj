@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		25EFEB6D25B56AFD005DF546 /* mobile_ios_coins_loaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFEB6C25B56AFD005DF546 /* mobile_ios_coins_loaderApp.swift */; };
-		25EFEB6F25B56AFD005DF546 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFEB6E25B56AFD005DF546 /* ContentView.swift */; };
+		25EFEB6F25B56AFD005DF546 /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFEB6E25B56AFD005DF546 /* CoinListView.swift */; };
 		25EFEB7125B56AFE005DF546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25EFEB7025B56AFE005DF546 /* Assets.xcassets */; };
 		25EFEB7425B56AFE005DF546 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25EFEB7325B56AFE005DF546 /* Preview Assets.xcassets */; };
+		25EFEB7E25B5703A005DF546 /* CrytoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFEB7D25B5703A005DF546 /* CrytoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		25EFEB6925B56AFD005DF546 /* mobile-ios-coins-loader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-ios-coins-loader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EFEB6C25B56AFD005DF546 /* mobile_ios_coins_loaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile_ios_coins_loaderApp.swift; sourceTree = "<group>"; };
-		25EFEB6E25B56AFD005DF546 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		25EFEB6E25B56AFD005DF546 /* CoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListView.swift; sourceTree = "<group>"; };
 		25EFEB7025B56AFE005DF546 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25EFEB7325B56AFE005DF546 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25EFEB7525B56AFE005DF546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25EFEB7D25B5703A005DF546 /* CrytoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrytoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				25EFEB6C25B56AFD005DF546 /* mobile_ios_coins_loaderApp.swift */,
-				25EFEB6E25B56AFD005DF546 /* ContentView.swift */,
+				25EFEB6E25B56AFD005DF546 /* CoinListView.swift */,
 				25EFEB7025B56AFE005DF546 /* Assets.xcassets */,
 				25EFEB7525B56AFE005DF546 /* Info.plist */,
 				25EFEB7225B56AFE005DF546 /* Preview Content */,
+				25EFEB7D25B5703A005DF546 /* CrytoService.swift */,
 			);
 			path = "mobile-ios-coins-loader";
 			sourceTree = "<group>";
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25EFEB6F25B56AFD005DF546 /* ContentView.swift in Sources */,
+				25EFEB7E25B5703A005DF546 /* CrytoService.swift in Sources */,
+				25EFEB6F25B56AFD005DF546 /* CoinListView.swift in Sources */,
 				25EFEB6D25B56AFD005DF546 /* mobile_ios_coins_loaderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

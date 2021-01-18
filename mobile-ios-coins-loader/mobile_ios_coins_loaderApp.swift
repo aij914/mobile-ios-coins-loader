@@ -11,7 +11,7 @@ import SwiftUI
 struct mobile_ios_coins_loaderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoinListView()
         }
     }
 }
